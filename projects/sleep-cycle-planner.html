@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sleep Cycle Planner | Project Details</title>
+    <meta
+      name="description"
+      content="Sleep Cycle Planner is a Flutter app for bedtime and wake-up suggestions, Firebase auth, reminders, localization, and persisted sleep preferences."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Outfit:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="site-header__inner">
+          <a class="brand" href="../index.html">Imran<span>.</span></a>
+          <nav class="site-nav" aria-label="Project navigation">
+            <div class="site-nav__links">
+              <a href="../index.html">Home</a>
+              <a href="#overview">Overview</a>
+              <a href="#features">Features</a>
+              <a href="#gallery">Gallery</a>
+            </div>
+            <a class="button button--secondary" href="../index.html#projects">
+              <i class="fa-solid fa-arrow-left"></i>
+              Back to Projects
+            </a>
+            <div class="header-actions">
+              <button class="mobile-toggle" type="button" data-mobile-toggle aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+            </div>
+          </nav>
+        </div>
+        <div class="mobile-nav" id="mobile-menu" data-mobile-menu>
+          <a href="../index.html">Home</a>
+          <a href="#overview">Overview</a>
+          <a href="#features">Features</a>
+          <a href="#gallery">Gallery</a>
+          <a href="../index.html#projects">Back to Projects</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="project-hero">
+            <div class="project-hero__grid">
+              <div>
+                <span class="eyebrow">Sleep Planning Flutter App</span>
+                <h1 class="project-hero__title">Sleep Cycle Planner</h1>
+                <p class="project-hero__copy">
+                  A mobile-first Flutter sleep-planning app that calculates bedtime and wake-up suggestions using
+                  90-minute sleep cycles, then supports authentication, reminders, localization, and persisted
+                  user preferences.
+                </p>
+                <div class="project-badges">
+                  <span class="pill">Flutter</span>
+                  <span class="pill">Firebase</span>
+                  <span class="pill">Notifications</span>
+                  <span class="pill">Localization</span>
+                </div>
+                <div class="button-row">
+                  <a class="button button--primary" href="#gallery">
+                    <i class="fa-solid fa-images"></i>
+                    View Screens
+                  </a>
+                  <a class="button button--secondary" href="../index.html#projects">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Back to Projects
+                  </a>
+                </div>
+              </div>
+              <div class="project-visual">
+                <img src="../assets/images/projects/sleep-images/sleep-screen-01.png" alt="Sleep cycle planner app preview" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tight" id="overview">
+        <div class="container">
+          <div class="project-layout">
+            <article class="card">
+              <h2 class="project-title">Overview</h2>
+              <p class="lead">
+                This project is a practical Flutter sleep-planning app rather than a starter shell. It calculates
+                recommended sleep and wake times using 90-minute cycles, then layers authentication, onboarding,
+                reminders, profile settings, localization, and local persistence on top of that core flow.
+              </p>
+              <p style="margin-top: 1rem">
+                The app is implemented as a mobile-first product with platform targets for Android, iOS, macOS,
+                Linux, Windows, and web. In practice, the strongest implementation is the mobile experience with
+                responsive adaptation where needed.
+              </p>
+              <p style="margin-top: 1rem">
+                Architecture is simple and practical: bootstrap in `main.dart`, global app/session state in
+                `app.dart`, go_router-based gating, feature folders under `lib/features/`, and focused storage
+                services instead of heavier repository or DI layers.
+              </p>
+            </article>
+
+            <aside class="card">
+              <h3>Project details</h3>
+              <div class="detail-list" style="margin-top: 1rem">
+                <div>
+                  <strong>Category</strong>
+                  <span>Sleep planning and wellness app</span>
+                </div>
+                <div>
+                  <strong>Built with</strong>
+                  <span>Flutter, Firebase Auth, Firestore, FCM, SharedPreferences</span>
+                </div>
+                <div>
+                  <strong>Main focus</strong>
+                  <span>Cycle calculation, reminders, onboarding, profile preferences</span>
+                </div>
+                <div>
+                  <strong>Current state</strong>
+                  <span>Working product with tested core logic and a few placeholder UI affordances</span>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="features">
+        <div class="container">
+          <div class="section__header">
+            <span class="eyebrow">Core Features</span>
+            <h2 class="section-title">A focused sleep app with real product wiring behind the UI.</h2>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <span class="feature-card__icon"><i class="fa-solid fa-bed"></i></span>
+              <h3>Sleep-cycle suggestions</h3>
+              <p>The dashboard calculates bedtime and wake-up suggestions using 15 minutes to fall asleep plus 90-minute cycles.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-card__icon"><i class="fa-solid fa-user-shield"></i></span>
+              <h3>Firebase auth flow</h3>
+              <p>Email sign-up, login, password reset, and session restore are wired into the real app flow.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-card__icon"><i class="fa-solid fa-bell"></i></span>
+              <h3>Reminders and notifications</h3>
+              <p>FCM listeners, timezone-aware local notifications, and reminder scheduling are implemented.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-card__icon"><i class="fa-solid fa-chart-line"></i></span>
+              <h3>Profile metrics</h3>
+              <p>The profile surface derives planned nights, consistency, and average sleep hours from local history.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-card__icon"><i class="fa-solid fa-language"></i></span>
+              <h3>Localization</h3>
+              <p>English and Kurdish are supported through a custom localization layer with RTL fallbacks.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-card__icon"><i class="fa-solid fa-floppy-disk"></i></span>
+              <h3>Local persistence</h3>
+              <p>SharedPreferences stores auth session cache, locale, preferences, reminders, and plan history.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tight">
+        <div class="container">
+          <div class="cards-grid">
+            <article class="timeline-card">
+              <h3>Architecture</h3>
+              <p>Feature-foldered structure with go_router shell navigation, local services, and screen-level state concentrated in large widgets.</p>
+            </article>
+            <article class="timeline-card">
+              <h3>Quality status</h3>
+              <p>Tests and analyze are clean, with unit coverage for cycle logic and storage, plus a widget boot smoke test.</p>
+            </article>
+            <article class="timeline-card">
+              <h3>Known gaps</h3>
+              <p>README and identifiers are generic, avatar editing is still placeholder, and history/analytics are local-only for now.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="gallery">
+        <div class="container">
+          <div class="section__header">
+            <span class="eyebrow">Gallery</span>
+            <h2 class="section-title">Screens from the sleep planning and reminder flow.</h2>
+          </div>
+          <div class="gallery-grid">
+            <article class="gallery-card">
+              <figure>
+                <img src="../assets/images/projects/sleep-images/sleep-screen-01.png" alt="Sleep planner screen 01" />
+                <figcaption>Sleep planner screen 01.</figcaption>
+              </figure>
+            </article>
+            <article class="gallery-card">
+              <figure>
+                <img src="../assets/images/projects/sleep-images/sleep-screen-02.png" alt="Sleep planner screen 02" />
+                <figcaption>Sleep planner screen 02.</figcaption>
+              </figure>
+            </article>
+            <article class="gallery-card">
+              <figure>
+                <img src="../assets/images/projects/sleep-images/sleep-screen-03.png" alt="Sleep planner screen 03" />
+                <figcaption>Sleep planner screen 03.</figcaption>
+              </figure>
+            </article>
+            <article class="gallery-card">
+              <figure>
+                <img src="../assets/images/projects/sleep-images/sleep-screen-04.png" alt="Sleep planner screen 04" />
+                <figcaption>Sleep planner screen 04.</figcaption>
+              </figure>
+            </article>
+            <article class="gallery-card">
+              <figure>
+                <img src="../assets/images/projects/sleep-images/sleep-screen-05.png" alt="Sleep planner screen 05" />
+                <figcaption>Sleep planner screen 05.</figcaption>
+              </figure>
+            </article>
+            <article class="gallery-card">
+              <figure>
+                <img src="../assets/images/projects/sleep-images/sleep-screen-06.png" alt="Sleep planner screen 06" />
+                <figcaption>Sleep planner screen 06.</figcaption>
+              </figure>
+            </article>
+            <article class="gallery-card">
+              <figure>
+                <img src="../assets/images/projects/sleep-images/sleep-screen-07.png" alt="Sleep planner screen 07" />
+                <figcaption>Sleep planner screen 07.</figcaption>
+              </figure>
+            </article>
+            <article class="gallery-card">
+              <figure>
+                <img src="../assets/images/projects/sleep-images/sleep-screen-08.png" alt="Sleep planner screen 08" />
+                <figcaption>Sleep planner screen 08.</figcaption>
+              </figure>
+            </article>
+            <article class="gallery-card">
+              <figure>
+                <img src="../assets/images/projects/sleep-images/sleep-screen-09.png" alt="Sleep planner screen 09" />
+                <figcaption>Sleep planner screen 09.</figcaption>
+              </figure>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer__inner">
+          <div>
+            <a class="brand" href="../index.html">Imran<span>.</span></a>
+            <p class="lead">Project detail page in the new standard portfolio structure.</p>
+          </div>
+          <div class="site-footer__links">
+            <a href="../index.html#projects">All Projects</a>
+            <a href="../index.html#contact">Contact</a>
+          </div>
+          <p>&copy; <span data-current-year></span> Imran Mohammed</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

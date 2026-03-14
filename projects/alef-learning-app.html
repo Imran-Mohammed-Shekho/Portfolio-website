@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alef Learning App | Project Details</title>
+    <meta
+      name="description"
+      content="Alef is a Flutter-based educational app for learning the Kurdish alphabet through animated lessons, guided progression, and local visual content."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Outfit:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="site-header__inner">
+          <a class="brand" href="../index.html">Imran<span>.</span></a>
+          <nav class="site-nav" aria-label="Project navigation">
+            <div class="site-nav__links">
+              <a href="../index.html">Home</a>
+              <a href="#overview">Overview</a>
+              <a href="#features">Features</a>
+              <a href="#gallery">Gallery</a>
+            </div>
+            <a class="button button--secondary" href="../index.html#projects">
+              <i class="fa-solid fa-arrow-left"></i>
+              Back to Projects
+            </a>
+            <div class="header-actions">
+              <button class="mobile-toggle" type="button" data-mobile-toggle aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+            </div>
+          </nav>
+        </div>
+        <div class="mobile-nav" id="mobile-menu" data-mobile-menu>
+          <a href="../index.html">Home</a>
+          <a href="#overview">Overview</a>
+          <a href="#features">Features</a>
+          <a href="#gallery">Gallery</a>
+          <a href="../index.html#projects">Back to Projects</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="project-hero">
+            <div class="project-hero__grid">
+              <div>
+                <span class="eyebrow">Educational Flutter App</span>
+                <h1 class="project-hero__title">Alef Learning App</h1>
+                <p class="project-hero__copy">
+                  Alef is a Flutter-based educational mobile app designed to help users learn the Kurdish
+                  alphabet through guided progression, colorful visuals, and animated presentation.
+                </p>
+                <div class="project-badges">
+                  <span class="pill">Flutter</span>
+                  <span class="pill">Provider</span>
+                  <span class="pill">Education</span>
+                  <span class="pill">Dark Mode</span>
+                </div>
+                <div class="button-row">
+                  <a class="button button--primary" href="#gallery">
+                    <i class="fa-solid fa-images"></i>
+                    View Screens
+                  </a>
+                  <a class="button button--secondary" href="../index.html#projects">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Back to Projects
+                  </a>
+                </div>
+              </div>
+              <div class="project-visual">
+                <img src="../assets/images/projects/alef-images/alef-screen-01.png" alt="Alef learning app preview" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tight" id="overview">
+        <div class="container">
+          <div class="project-layout">
+            <article class="card">
+              <h2 class="project-title">Overview</h2>
+              <p class="lead">
+                Alef is a polished educational UI prototype focused on teaching the Kurdish alphabet through
+                visual repetition, guided lesson order, and child-friendly presentation.
+              </p>
+              <p style="margin-top: 1rem">
+                The app starts with an animated splash and welcome flow, then moves into a bottom-navigation
+                shell with a home screen and profile screen. Learners open alphabet lessons one by one, see
+                example words and images, and unlock the next letter as they progress.
+              </p>
+              <p style="margin-top: 1rem">
+                It currently uses local content only. There is no backend, database, or API yet, and progress is
+                stored in memory, which means lesson completion resets when the app restarts.
+              </p>
+            </article>
+
+            <aside class="card">
+              <h3>Project details</h3>
+              <div class="detail-list" style="margin-top: 1rem">
+                <div>
+                  <strong>Category</strong>
+                  <span>Educational mobile app</span>
+                </div>
+                <div>
+                  <strong>Built with</strong>
+                  <span>Flutter, Provider, local assets</span>
+                </div>
+                <div>
+                  <strong>Main focus</strong>
+                  <span>Alphabet lessons, guided progression, animated visual UI</span>
+                </div>
+                <div>
+                  <strong>Current stage</strong>
+                  <span>Functional learning prototype with room for persistence and profile improvements</span>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="features">
+        <div class="container">
+          <div class="section__header">
+            <span class="eyebrow">Key Features</span>
+            <h2 class="section-title">Designed to make early Kurdish alphabet learning visual and engaging.</h2>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <span class="feature-card__icon"><i class="fa-solid fa-book-open"></i></span>
+              <h3>Sequential alphabet lessons</h3>
+              <p>Letters unlock one by one, giving learners a simple guided path instead of a confusing open list.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-card__icon"><i class="fa-solid fa-image"></i></span>
+              <h3>Word and image pairing</h3>
+              <p>Each letter is supported with a Kurdish example word and matching illustration for visual repetition.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-card__icon"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+              <h3>Animated learning flow</h3>
+              <p>Splash screen, welcome flow, transitions, and decorated cards keep the experience lively.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-card__icon"><i class="fa-solid fa-palette"></i></span>
+              <h3>Colorful themed UI</h3>
+              <p>The app uses gradients, custom theming, local illustrations, and decorated lesson cards.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-card__icon"><i class="fa-solid fa-layer-group"></i></span>
+              <h3>Provider-based state</h3>
+              <p>Theme switching and lesson progression are managed through dedicated providers in Flutter.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-card__icon"><i class="fa-solid fa-moon"></i></span>
+              <h3>Dark mode support</h3>
+              <p>The visual system includes dark mode and custom Kurdish-script font support for local content.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tight">
+        <div class="container">
+          <div class="cards-grid">
+            <article class="timeline-card">
+              <h3>App flow</h3>
+              <p>Animated splash screen, welcome page, bottom navigation shell, then lesson browsing from home.</p>
+            </article>
+            <article class="timeline-card">
+              <h3>Data model</h3>
+              <p>All letters, colors, categories, words, and images are stored locally inside the app package.</p>
+            </article>
+            <article class="timeline-card">
+              <h3>Next improvements</h3>
+              <p>Persist learner progress, store theme settings, and replace static profile activity with real data.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="gallery">
+        <div class="container">
+          <div class="section__header">
+            <span class="eyebrow">Gallery</span>
+            <h2 class="section-title">Screens from the Alef alphabet learning experience.</h2>
+          </div>
+          <div class="gallery-grid">
+            <article class="gallery-card">
+              <figure>
+                <img src="../assets/images/projects/alef-images/alef-screen-01.png" alt="Alef app screen 01" />
+                <figcaption>Alef screen 01.</figcaption>
+              </figure>
+            </article>
+            <article class="gallery-card">
+              <figure>
+                <img src="../assets/images/projects/alef-images/alef-screen-02.png" alt="Alef app screen 02" />
+                <figcaption>Alef screen 02.</figcaption>
+              </figure>
+            </article>
+            <article class="gallery-card">
+              <figure>
+                <img src="../assets/images/projects/alef-images/alef-screen-03.png" alt="Alef app screen 03" />
+                <figcaption>Alef screen 03.</figcaption>
+              </figure>
+            </article>
+            <article class="gallery-card">
+              <figure>
+                <img src="../assets/images/projects/alef-images/alef-screen-04.png" alt="Alef app screen 04" />
+                <figcaption>Alef screen 04.</figcaption>
+              </figure>
+            </article>
+            <article class="gallery-card">
+              <figure>
+                <img src="../assets/images/projects/alef-images/alef-screen-05.png" alt="Alef app screen 05" />
+                <figcaption>Alef screen 05.</figcaption>
+              </figure>
+            </article>
+            <article class="gallery-card">
+              <figure>
+                <img src="../assets/images/projects/alef-images/alef-screen-06.png" alt="Alef app screen 06" />
+                <figcaption>Alef screen 06.</figcaption>
+              </figure>
+            </article>
+            <article class="gallery-card">
+              <figure>
+                <img src="../assets/images/projects/alef-images/alef-screen-07.png" alt="Alef app screen 07" />
+                <figcaption>Alef screen 07.</figcaption>
+              </figure>
+            </article>
+            <article class="gallery-card">
+              <figure>
+                <img src="../assets/images/projects/alef-images/alef-screen-08.png" alt="Alef app screen 08" />
+                <figcaption>Alef screen 08.</figcaption>
+              </figure>
+            </article>
+            <article class="gallery-card">
+              <figure>
+                <img src="../assets/images/projects/alef-images/alef-screen-09.png" alt="Alef app screen 09" />
+                <figcaption>Alef screen 09.</figcaption>
+              </figure>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer__inner">
+          <div>
+            <a class="brand" href="../index.html">Imran<span>.</span></a>
+            <p class="lead">Project detail page in the new standard portfolio structure.</p>
+          </div>
+          <div class="site-footer__links">
+            <a href="../index.html#projects">All Projects</a>
+            <a href="../index.html#contact">Contact</a>
+          </div>
+          <p>&copy; <span data-current-year></span> Imran Mohammed</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

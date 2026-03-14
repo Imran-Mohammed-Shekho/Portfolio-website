@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quran App | Project Details</title>
+  <meta name="description"
+    content="Quran App is a Flutter Islamic utility app with Quran browsing, recitation practice, memorization mode, prayer times, qibla compass, and dhikr tracking." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Outfit:wght@500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="site-header__inner">
+        <a class="brand" href="../index.html">Imran<span>.</span></a>
+        <nav class="site-nav" aria-label="Project navigation">
+          <div class="site-nav__links">
+            <a href="../index.html">Home</a>
+            <a href="#overview">Overview</a>
+            <a href="#features">Features</a>
+            <a href="#gallery">Gallery</a>
+          </div>
+          <a class="button button--secondary" href="../index.html#projects">
+            <i class="fa-solid fa-arrow-left"></i>
+            Back to Projects
+          </a>
+          <div class="header-actions">
+            <button class="mobile-toggle" type="button" data-mobile-toggle aria-label="Open navigation menu"
+              aria-controls="mobile-menu" aria-expanded="false">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </nav>
+      </div>
+      <div class="mobile-nav" id="mobile-menu" data-mobile-menu>
+        <a href="../index.html">Home</a>
+        <a href="#overview">Overview</a>
+        <a href="#features">Features</a>
+        <a href="#gallery">Gallery</a>
+        <a href="../index.html#projects">Back to Projects</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="project-hero">
+          <div class="project-hero__grid">
+            <div>
+              <span class="eyebrow">Islamic Utility Flutter App</span>
+              <h1 class="project-hero__title">Quran App</h1>
+              <p class="project-hero__copy">
+                A broader Islamic utility app built around Quran reading and recitation practice, then expanded
+                to include memorization mode, prayer times, qibla compass, and dhikr tracking inside one
+                mobile-first shell.
+              </p>
+              <div class="project-badges">
+                <span class="pill">Flutter</span>
+                <span class="pill">Provider</span>
+                <span class="pill">Speech Practice</span>
+                <span class="pill">Prayer Utilities</span>
+              </div>
+              <div class="button-row">
+                <a class="button button--primary" href="#gallery">
+                  <i class="fa-solid fa-images"></i>
+                  View Screens
+                </a>
+                <a class="button button--secondary" href="../index.html#projects">
+                  <i class="fa-solid fa-arrow-left"></i>
+                  Back to Projects
+                </a>
+              </div>
+            </div>
+            <div class="project-visual">
+              <img src="../assets/images/projects/quran-images/quran-screen-10.png" alt="Quran app preview" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight" id="overview">
+      <div class="container">
+        <div class="project-layout">
+          <article class="card">
+            <h2 class="project-title">Overview</h2>
+            <p class="lead">
+              The active product combines five main areas in one shell: Quran browsing and recitation practice,
+              memorization mode, prayer times, qibla compass, and dhikr tracking. It launches through a splash
+              screen and then moves into a five-tab shell: Home, Quran, Zikir, Prayer, and Settings.
+            </p>
+            <p style="margin-top: 1rem">
+              The Quran flow supports surah browsing, Arabic and English search, ayah reading, recitation
+              audio, and microphone-based recitation practice. Recitation is evaluated through speech capture,
+              Quran-aware post-processing, and comparison logic with lenient, strict Arabic, and tajweed-style
+              modes.
+            </p>
+            <p style="margin-top: 1rem">
+              The app has also grown into a broader daily-use Islamic utility with prayer times, qibla
+              direction, live compass support, dhikr counters, reminders, localization, and polished mobile UI.
+            </p>
+          </article>
+
+          <aside class="card">
+            <h3>Project details</h3>
+            <div class="detail-list" style="margin-top: 1rem">
+              <div>
+                <strong>Category</strong>
+                <span>Quran and Islamic utility app</span>
+              </div>
+              <div>
+                <strong>Built with</strong>
+                <span>Flutter, Provider, local JSON assets, local notifications</span>
+              </div>
+              <div>
+                <strong>Main focus</strong>
+                <span>Quran recitation, memorization, prayer tools, dhikr tracking</span>
+              </div>
+              <div>
+                <strong>Current state</strong>
+                <span>Feature-rich mobile-first product with some legacy services and partially unused code paths</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section__header">
+          <span class="eyebrow">Core Features</span>
+          <h2 class="section-title">A single app that blends Quran practice with daily Islamic utilities.</h2>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-card__icon"><i class="fa-solid fa-book-open-reader"></i></span>
+            <h3>Quran library</h3>
+            <p>Browse surahs, search by number or Arabic/English names, open ayahs, and play recitation audio.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-card__icon"><i class="fa-solid fa-microphone-lines"></i></span>
+            <h3>Recitation evaluation</h3>
+            <p>Arabic speech is post-processed and compared to target ayahs with multiple comparison modes.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-card__icon"><i class="fa-solid fa-brain"></i></span>
+            <h3>Memorization mode</h3>
+            <p>Words are progressively revealed as the user recites correctly, creating a guided memorization flow.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-card__icon"><i class="fa-solid fa-clock"></i></span>
+            <h3>Prayer times</h3>
+            <p>The app shows today’s schedule, next prayer, live countdown, and supports local notifications.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-card__icon"><i class="fa-solid fa-compass"></i></span>
+            <h3>Qibla compass</h3>
+            <p>The prayer experience includes qibla bearing plus a live compass screen using device heading data.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-card__icon"><i class="fa-solid fa-hand-sparkles"></i></span>
+            <h3>Dhikr and tasbih</h3>
+            <p>Preset and custom dhikr sets, vibration feedback, persistence, and daily reminder support are built in.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container">
+        <div class="cards-grid">
+          <article class="timeline-card">
+            <h3>Architecture</h3>
+            <p>Provider-based state with top-level controllers for app settings, Quran practice, prayer times, and
+              zikir.</p>
+          </article>
+          <article class="timeline-card">
+            <h3>Data path</h3>
+            <p>Quran text is local-first through bundled asset JSON, with local notifications and custom localization
+              instead of generated ARB.</p>
+          </article>
+          <article class="timeline-card">
+            <h3>Important gaps</h3>
+            <p>Some legacy API/SQLite services remain in the repo, and remote tajweed verification is not fully wired
+              into the live flow.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container">
+        <div class="cards-grid">
+          <article class="timeline-card">
+            <h3>Localization and UI</h3>
+            <p>Custom string tables, Kurdish-first language behavior, RTL switching, Material 3 theming, gradients, and
+              mobile-first screens shape the app experience.</p>
+          </article>
+          <article class="timeline-card">
+            <h3>Audio and notifications</h3>
+            <p>Audio can come from bundled assets or remote URLs, while reminders are handled through local notification
+              services.</p>
+          </article>
+          <article class="timeline-card">
+            <h3>Repo observations</h3>
+            <p>The README reflects an older architecture, while the active app is centered on asset-driven Quran content
+              and provider-based controllers.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section__header">
+          <span class="eyebrow">Gallery</span>
+          <h2 class="section-title">Screens from the Quran, prayer, and dhikr experience.</h2>
+        </div>
+        <div class="gallery-grid">
+          <article class="gallery-card">
+            <figure><img src="../assets/images/projects/quran-images/quran-screen-01.png"
+                alt="Quran companion screen 01" />
+              <figcaption>Quran companion screen 01.</figcaption>
+            </figure>
+          </article>
+          <article class="gallery-card">
+            <figure><img src="../assets/images/projects/quran-images/quran-screen-02.png"
+                alt="Quran companion screen 02" />
+              <figcaption>Quran companion screen 02.</figcaption>
+            </figure>
+          </article>
+          <article class="gallery-card">
+            <figure><img src="../assets/images/projects/quran-images/quran-screen-03.png"
+                alt="Quran companion screen 03" />
+              <figcaption>Quran companion screen 03.</figcaption>
+            </figure>
+          </article>
+          <article class="gallery-card">
+            <figure><img src="../assets/images/projects/quran-images/quran-screen-04.png"
+                alt="Quran companion screen 04" />
+              <figcaption>Quran companion screen 04.</figcaption>
+            </figure>
+          </article>
+          <article class="gallery-card">
+            <figure><img src="../assets/images/projects/quran-images/quran-screen-05.png"
+                alt="Quran companion screen 05" />
+              <figcaption>Quran companion screen 05.</figcaption>
+            </figure>
+          </article>
+          <article class="gallery-card">
+            <figure><img src="../assets/images/projects/quran-images/quran-screen-06.png"
+                alt="Quran companion screen 06" />
+              <figcaption>Quran companion screen 06.</figcaption>
+            </figure>
+          </article>
+          <article class="gallery-card">
+            <figure><img src="../assets/images/projects/quran-images/quran-screen-07.png"
+                alt="Quran companion screen 07" />
+              <figcaption>Quran companion screen 07.</figcaption>
+            </figure>
+          </article>
+          <article class="gallery-card">
+            <figure><img src="../assets/images/projects/quran-images/quran-screen-08.png"
+                alt="Quran companion screen 08" />
+              <figcaption>Quran companion screen 08.</figcaption>
+            </figure>
+          </article>
+          <article class="gallery-card">
+            <figure><img src="../assets/images/projects/quran-images/quran-screen-09.png"
+                alt="Quran companion screen 09" />
+              <figcaption>Quran companion screen 09.</figcaption>
+            </figure>
+          </article>
+          <article class="gallery-card">
+            <figure><img src="../assets/images/projects/quran-images/quran-screen-10.png"
+                alt="Quran companion screen 10" />
+              <figcaption>Quran companion screen 10.</figcaption>
+            </figure>
+          </article>
+          <article class="gallery-card">
+            <figure><img src="../assets/images/projects/quran-images/quran-screen-11.png"
+                alt="Quran companion screen 11" />
+              <figcaption>Quran companion screen 11.</figcaption>
+            </figure>
+          </article>
+          <article class="gallery-card">
+            <figure><img src="../assets/images/projects/quran-images/quran-screen-12.png"
+                alt="Quran companion screen 12" />
+              <figcaption>Quran companion screen 12.</figcaption>
+            </figure>
+          </article>
+          <article class="gallery-card">
+            <figure><img src="../assets/images/projects/quran-images/quran-screen-13.png"
+                alt="Quran companion screen 13" />
+              <figcaption>Quran companion screen 13.</figcaption>
+            </figure>
+          </article>
+          <article class="gallery-card">
+            <figure><img src="../assets/images/projects/quran-images/quran-screen-14.png"
+                alt="Quran companion screen 14" />
+              <figcaption>Quran companion screen 14.</figcaption>
+            </figure>
+          </article>
+          <article class="gallery-card">
+            <figure><img src="../assets/images/projects/quran-images/quran-screen-15.png"
+                alt="Quran companion screen 15" />
+              <figcaption>Quran companion screen 15.</figcaption>
+            </figure>
+          </article>
+          <article class="gallery-card">
+            <figure><img src="../assets/images/projects/quran-images/quran-screen-16.png"
+                alt="Quran companion screen 16" />
+              <figcaption>Quran companion screen 16.</figcaption>
+            </figure>
+          </article>
+          <article class="gallery-card">
+            <figure><img src="../assets/images/projects/quran-images/quran-screen-17.png"
+                alt="Quran companion screen 17" />
+              <figcaption>Quran companion screen 17.</figcaption>
+            </figure>
+          </article>
+          <article class="gallery-card">
+            <figure><img src="../assets/images/projects/quran-images/quran-screen-18.png"
+                alt="Quran companion screen 18" />
+              <figcaption>Quran companion screen 18.</figcaption>
+            </figure>
+          </article>
+          <article class="gallery-card">
+            <figure><img src="../assets/images/projects/quran-images/quran-screen-19.png"
+                alt="Quran companion screen 19" />
+              <figcaption>Quran companion screen 19.</figcaption>
+            </figure>
+          </article>
+          <article class="gallery-card">
+            <figure><img src="../assets/images/projects/quran-images/quran-screen-20.png"
+                alt="Quran companion screen 20" />
+              <figcaption>Quran companion screen 20.</figcaption>
+            </figure>
+          </article>
+          <article class="gallery-card">
+            <figure><img src="../assets/images/projects/quran-images/quran-screen-21.png"
+                alt="Quran companion screen 21" />
+              <figcaption>Quran companion screen 21.</figcaption>
+            </figure>
+          </article>
+          <article class="gallery-card">
+            <figure><img src="../assets/images/projects/quran-images/quran-screen-22.png"
+                alt="Quran companion screen 22" />
+              <figcaption>Quran companion screen 22.</figcaption>
+            </figure>
+          </article>
+          <article class="gallery-card">
+            <figure><img src="../assets/images/projects/quran-images/quran-screen-23.png"
+                alt="Quran companion screen 23" />
+              <figcaption>Quran companion screen 23.</figcaption>
+            </figure>
+          </article>
+          <article class="gallery-card">
+            <figure><img src="../assets/images/projects/quran-images/quran-screen-24.png"
+                alt="Quran companion screen 24" />
+              <figcaption>Quran companion screen 24.</figcaption>
+            </figure>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__inner">
+        <div>
+          <a class="brand" href="../index.html">Imran<span>.</span></a>
+          <p class="lead">Project detail page in the new standard portfolio structure.</p>
+        </div>
+        <div class="site-footer__links">
+          <a href="../index.html#projects">All Projects</a>
+          <a href="../index.html#contact">Contact</a>
+        </div>
+        <p>&copy; <span data-current-year></span> Imran Mohammed</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

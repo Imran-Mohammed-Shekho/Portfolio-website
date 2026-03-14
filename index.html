@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Imran Mohammed | Flutter Developer Portfolio</title>
+  <meta name="description"
+    content="Portfolio website for Imran Mohammed, a Flutter mobile app developer building polished cross-platform experiences." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Outfit:wght@500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="site-header__inner">
+        <a class="brand" href="index.html">Imran<span>.</span></a>
+
+        <nav class="site-nav" aria-label="Main navigation">
+          <div class="site-nav__links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </div>
+
+          <a class="button button--secondary" href="https://github.com/Imran-Mohammed-Shekho" target="_blank" rel="noreferrer">
+            <i class="fa-brands fa-github"></i>
+            GitHub
+          </a>
+
+          <div class="header-actions">
+            <button class="mobile-toggle" type="button" data-mobile-toggle aria-label="Open navigation menu"
+              aria-controls="mobile-menu" aria-expanded="false">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </nav>
+      </div>
+
+      <div class="mobile-nav" id="mobile-menu" data-mobile-menu>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="https://github.com/Imran-Mohammed-Shekho" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero__panel">
+          <div class="hero__grid">
+            <div>
+              <span class="eyebrow">Flutter Mobile Developer</span>
+              <h1 class="hero__title">Building clean, fast mobile apps for real users.</h1>
+              <p class="hero__copy">
+                I’m Imran Mohammed, a Flutter developer based in Erbil. I focus on responsive interfaces,
+                maintainable app architecture, and polished user experience across Android and iOS.
+              </p>
+
+              <div class="hero__highlights" aria-label="Top highlights">
+                <span class="pill"><i class="fa-solid fa-mobile-screen"></i> Cross-platform apps</span>
+                <span class="pill"><i class="fa-solid fa-fire"></i> Firebase workflows</span>
+                <span class="pill"><i class="fa-solid fa-palette"></i> UI focused delivery</span>
+              </div>
+
+              <div class="button-row">
+                <a class="button button--primary" href="#projects">
+                  <i class="fa-solid fa-arrow-right"></i>
+                  View Projects
+                </a>
+                <a class="button button--secondary" href="#contact">
+                  <i class="fa-solid fa-envelope"></i>
+                  Contact Me
+                </a>
+              </div>
+            </div>
+
+            <div class="hero-visual">
+              <div class="portrait-card">
+                <img src="assets/images/profile/mypicture.png" alt="Portrait of Imran Mohammed" />
+              </div>
+
+              <div class="metric-grid">
+                <div class="stat-card">
+                  <strong>2+</strong>
+                  <span>Years building with Flutter</span>
+                </div>
+                <div class="stat-card">
+                  <strong>7</strong>
+                  <span>Featured mobile app projects</span>
+                </div>
+                <div class="stat-card">
+                  <strong>Erbil</strong>
+                  <span>Working from Kurdistan, Iraq</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight" id="about">
+      <div class="container">
+        <div class="section__header">
+          <span class="eyebrow">About</span>
+          <h2 class="section-title">A portfolio focused on mobile product quality.</h2>
+          <p class="section-copy">
+            This site showcases personal Flutter projects, UI work, and practical app features such as
+            authentication, state management, live data, and polished dark-mode experiences.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <article class="card">
+            <h3>Who I am</h3>
+            <p>
+              I’m a 21-year-old Flutter developer who enjoys turning app ideas into smooth, usable products.
+              My work is centered on responsive layouts, clean code structure, and interfaces that feel clear
+              instead of cluttered.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Core focus</h3>
+            <p>
+              I work most comfortably with Flutter, Dart, Firebase, Provider, and UI implementation. I care
+              about performance, screen-level consistency, and shipping maintainable front-end structure.
+            </p>
+          </article>
+        </div>
+
+        <div class="cards-grid" style="margin-top: 1.5rem">
+          <article class="info-card">
+            <h3>Location</h3>
+            <p>Erbil, Iraq</p>
+          </article>
+          <article class="info-card">
+            <h3>Email</h3>
+            <p><a class="inline-link" href="mailto:aemrancr@gmail.com">aemrancr@gmail.com</a></p>
+          </article>
+          <article class="info-card">
+            <h3>Phone</h3>
+            <p><a class="inline-link" href="tel:+9647507937503">0750 7937503</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section__header">
+          <span class="eyebrow">Skills</span>
+          <h2 class="section-title">Tools and strengths I use across mobile and backend work.</h2>
+          <p class="section-copy">
+            My main focus is Flutter, but I also work on backend features and data layers. This section now
+            reflects both the app side and the server-side stack behind production-style projects.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <article class="skill-card">
+            <h3>Front-end skills</h3>
+            <div class="skill-list">
+              <div class="skill-row">
+                <div class="skill-row__label">
+                  <span>Flutter</span>
+                  <span>95%</span>
+                </div>
+                <div class="progress" data-progress="95"><span></span></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-row__label">
+                  <span>Dart</span>
+                  <span>94%</span>
+                </div>
+                <div class="progress" data-progress="94"><span></span></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-row__label">
+                  <span>Firebase</span>
+                  <span>90%</span>
+                </div>
+                <div class="progress" data-progress="90"><span></span></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-row__label">
+                  <span>UI Implementation</span>
+                  <span>92%</span>
+                </div>
+                <div class="progress" data-progress="92"><span></span></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <h3>Backend skills</h3>
+            <div class="skill-list">
+              <div class="skill-row">
+                <div class="skill-row__label">
+                  <span>Laravel</span>
+                  <span>82%</span>
+                </div>
+                <div class="progress" data-progress="82"><span></span></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-row__label">
+                  <span>PHP</span>
+                  <span>85%</span>
+                </div>
+                <div class="progress" data-progress="85"><span></span></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-row__label">
+                  <span>MySQL</span>
+                  <span>84%</span>
+                </div>
+                <div class="progress" data-progress="84"><span></span></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-row__label">
+                  <span>REST API Development</span>
+                  <span>80%</span>
+                </div>
+                <div class="progress" data-progress="80"><span></span></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-row__label">
+                  <span>Postman</span>
+                  <span>84%</span>
+                </div>
+                <div class="progress" data-progress="84"><span></span></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <h3>Professional skills</h3>
+            <div class="skill-list">
+              <div class="skill-row">
+                <div class="skill-row__label">
+                  <span>Problem solving</span>
+                  <span>90%</span>
+                </div>
+                <div class="progress" data-progress="90"><span></span></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-row__label">
+                  <span>Teamwork</span>
+                  <span>92%</span>
+                </div>
+                <div class="progress" data-progress="92"><span></span></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-row__label">
+                  <span>Communication</span>
+                  <span>88%</span>
+                </div>
+                <div class="progress" data-progress="88"><span></span></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-row__label">
+                  <span>Project ownership</span>
+                  <span>86%</span>
+                </div>
+                <div class="progress" data-progress="86"><span></span></div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <article class="card" style="margin-top: 1.5rem">
+          <h3>Tech stack</h3>
+          <div class="tech-stack" style="margin-top: 1rem">
+            <span class="tech-item">Flutter</span>
+            <span class="tech-item">Dart</span>
+            <span class="tech-item">Firebase</span>
+            <span class="tech-item">Provider</span>
+            <span class="tech-item">REST APIs</span>
+            <span class="tech-item">Laravel</span>
+            <span class="tech-item">PHP</span>
+            <span class="tech-item">MySQL</span>
+            <span class="tech-item">Postman</span>
+            <span class="tech-item">UI/UX</span>
+            <span class="tech-item">Git</span>
+            <span class="tech-item">GitHub</span>
+            <span class="tech-item">SQL</span>
+            <span class="tech-item">Figma</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__header">
+          <span class="eyebrow">Projects</span>
+          <h2 class="section-title">Featured Flutter apps and UI case studies.</h2>
+          <p class="section-copy">
+            Each card links to a dedicated detail page in the new `projects/` folder with cleaner file names,
+            shared styling, and consistent navigation.
+          </p>
+        </div>
+
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-card__media">
+                <img src="assets/images/projects/quran-images/quran-screen-10.png" alt="Quran Companion App preview" />
+              </div>
+              <div class="project-card__body">
+                <div>
+                  <h3>Quran Companion App</h3>
+                  <p>Flutter Islamic utility app combining Quran reading, recitation practice, prayer times, qibla, and dhikr tracking.</p>
+                </div>
+                <div class="badge-list">
+                  <span class="badge">Flutter</span>
+                  <span class="badge">Provider</span>
+                  <span class="badge">Audio & Speech</span>
+                </div>
+                <div class="project-card__actions">
+                  <a class="link-button" href="projects/quran-companion-app.html">Open page</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__media">
+                <img src="assets/images/projects/sleep-images/sleep-screen-01.png" alt="Sleep Cycle Planner preview" />
+              </div>
+              <div class="project-card__body">
+                <div>
+                  <h3>Sleep Cycle Planner</h3>
+                  <p>Flutter sleep-planning app with cycle-based suggestions, Firebase auth, reminders, and persisted preferences.</p>
+                </div>
+                <div class="badge-list">
+                  <span class="badge">Flutter</span>
+                  <span class="badge">Firebase</span>
+                  <span class="badge">Notifications</span>
+                </div>
+                <div class="project-card__actions">
+                  <a class="link-button" href="projects/sleep-cycle-planner.html">Open page</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__media">
+                <img src="assets/images/projects/alef-images/alef-screen-01.png" alt="Alef Learning App preview" />
+              </div>
+              <div class="project-card__body">
+                <div>
+                  <h3>Alef Learning App</h3>
+                  <p>Educational Flutter app for teaching the Kurdish alphabet through guided lessons, visuals, and progression.</p>
+                </div>
+                <div class="badge-list">
+                  <span class="badge">Flutter</span>
+                  <span class="badge">Provider</span>
+                  <span class="badge">Education</span>
+                </div>
+                <div class="project-card__actions">
+                  <a class="link-button" href="projects/alef-learning-app.html">Open page</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__media">
+                <img src="assets/images/projects/image2-portrait.png" alt="Kurd Shop preview" />
+              </div>
+              <div class="project-card__body">
+                <div>
+                  <h3>Kurd Shop</h3>
+                  <p>E-commerce app with product discovery, cart workflows, and a polished shopping UI.</p>
+                </div>
+                <div class="badge-list">
+                  <span class="badge">Flutter</span>
+                  <span class="badge">Firebase</span>
+                  <span class="badge">E-Commerce</span>
+                </div>
+                <div class="project-card__actions">
+                  <a class="link-button" href="projects/kurd-shop.html">Open page</a>
+                  <a class="link-button" href="https://github.com/Imran-Mohammed-Shekho/E-commerce-app" target="_blank"
+                    rel="noreferrer">GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__media">
+                <img src="assets/images/projects/gymImages/2.png" alt="Gym Workout and Supplement Store preview" />
+              </div>
+              <div class="project-card__body">
+                <div>
+                  <h3>Gym Workout &amp; Supplement Store</h3>
+                  <p>Fitness and store concept combining workout guidance, reusable widgets, and commerce flows.</p>
+                </div>
+                <div class="badge-list">
+                  <span class="badge">Flutter</span>
+                  <span class="badge">Animations</span>
+                  <span class="badge">Dark Mode</span>
+                </div>
+                <div class="project-card__actions">
+                  <a class="link-button" href="projects/gym-workout-store.html">Open page</a>
+                  <a class="link-button" href="https://github.com/Imran-Mohammed-Shekho/Gym-App" target="_blank"
+                    rel="noreferrer">GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__media">
+                <img src="assets/images/projects/resized_iphone15_image-left.png" alt="Instagram Profile UI preview" />
+              </div>
+              <div class="project-card__body">
+                <div>
+                  <h3>Instagram Profile UI</h3>
+                  <p>Flutter UI clone of the Instagram profile page with responsive layout and custom widgets.</p>
+                </div>
+                <div class="badge-list">
+                  <span class="badge">Flutter</span>
+                  <span class="badge">Custom Widgets</span>
+                  <span class="badge">Responsive UI</span>
+                </div>
+                <div class="project-card__actions">
+                  <a class="link-button" href="projects/instagram-ui.html">Open page</a>
+                  <a class="link-button" href="https://github.com/Imran-Mohammed-Shekho/Instagram-UI" target="_blank"
+                    rel="noreferrer">GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__media">
+                <img src="assets/images/projects/tody1_LE_upscale_balanced_x4.jpg" alt="Todoey App preview" />
+              </div>
+              <div class="project-card__body">
+                <div>
+                  <h3>Todoey App</h3>
+                  <p>Simple note-taking app focused on clarity, dark mode, and responsive note management.</p>
+                </div>
+                <div class="badge-list">
+                  <span class="badge">Flutter</span>
+                  <span class="badge">Productivity</span>
+                  <span class="badge">Responsive UI</span>
+                </div>
+                <div class="project-card__actions">
+                  <a class="link-button" href="projects/todoey-app.html">Open page</a>
+                  <a class="link-button" href="https://github.com/Imran-Mohammed-Shekho/Todyoe-App" target="_blank"
+                    rel="noreferrer">GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__media">
+                <img src="assets/images/projects/bm3.jpg" alt="BMI Calculator preview" />
+              </div>
+              <div class="project-card__body">
+                <div>
+                  <h3>BMI Calculator</h3>
+                  <p>Health utility app for calculating BMI with category feedback and smooth micro interactions.</p>
+                </div>
+                <div class="badge-list">
+                  <span class="badge">Flutter</span>
+                  <span class="badge">Health Logic</span>
+                  <span class="badge">Dark Mode</span>
+                </div>
+                <div class="project-card__actions">
+                  <a class="link-button" href="projects/bmi-calculator.html">Open page</a>
+                  <a class="link-button" href="https://github.com/Imran-Mohammed-Shekho/Modern-BMI" target="_blank"
+                    rel="noreferrer">GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__media">
+                <img src="assets/images/projects/weather-image.jpg" alt="Weather App preview" />
+              </div>
+              <div class="project-card__body">
+                <div>
+                  <h3>Weather App</h3>
+                  <p>Real-time weather experience using location lookup, city search, and live API data.</p>
+                </div>
+                <div class="badge-list">
+                  <span class="badge">Flutter</span>
+                  <span class="badge">Provider</span>
+                  <span class="badge">OpenWeather API</span>
+                </div>
+                <div class="project-card__actions">
+                  <a class="link-button" href="projects/weather-app.html">Open page</a>
+                  <a class="link-button" href="https://github.com/Imran-Mohammed-Shekho/Weather-App" target="_blank"
+                    rel="noreferrer">GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__media">
+                <img src="assets/images/projects/flash-chating.jpg" alt="Flash Chatting App preview" />
+              </div>
+              <div class="project-card__body">
+                <div>
+                  <h3>Flash Chatting App</h3>
+                  <p>Firebase-powered chat app with real-time messaging, authentication, and reactive UI flows.</p>
+                </div>
+                <div class="badge-list">
+                  <span class="badge">Flutter</span>
+                  <span class="badge">Firebase</span>
+                  <span class="badge">Streams</span>
+                </div>
+                <div class="project-card__actions">
+                  <a class="link-button" href="projects/flash-chatting-app.html">Open page</a>
+                  <a class="link-button" href="https://github.com/Imran-Mohammed-Shekho/Chating-App" target="_blank"
+                    rel="noreferrer">GitHub</a>
+                </div>
+              </div>
+            </article>
+          </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section__header">
+          <span class="eyebrow">Contact</span>
+          <h2 class="section-title">Have a project in mind or want to collaborate?</h2>
+          <p class="section-copy">
+            The contact section keeps your existing Formspree workflow, but the placeholder redirect has been
+            removed so it will no longer send visitors to a fake URL.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <article class="contact-card">
+            <h3>Send a message</h3>
+            <form class="contact-form" action="https://formspree.io/f/xdkgqygn" method="POST">
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="name">Your name</label>
+                  <input id="name" name="name" type="text" placeholder="Full name" required />
+                </div>
+                <div class="form-field">
+                  <label for="email">Your email</label>
+                  <input id="email" name="email" type="email" placeholder="you@example.com" required />
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="subject">Subject</label>
+                <input id="subject" name="subject" type="text" placeholder="Project inquiry" required />
+              </div>
+
+              <div class="form-field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" placeholder="Tell me about your idea"
+                  required></textarea>
+              </div>
+
+              <button class="button button--primary" type="submit">
+                <i class="fa-solid fa-paper-plane"></i>
+                Send Message
+              </button>
+            </form>
+          </article>
+
+          <article class="contact-card">
+            <h3>Direct contact</h3>
+            <div class="contact-points">
+              <div class="contact-point">
+                <span class="contact-point__icon"><i class="fa-solid fa-location-dot"></i></span>
+                <div>
+                  <strong>Location</strong>
+                  <p>Erbil, Iraq</p>
+                </div>
+              </div>
+              <div class="contact-point">
+                <span class="contact-point__icon"><i class="fa-solid fa-envelope"></i></span>
+                <div>
+                  <strong>Email</strong>
+                  <p><a class="inline-link" href="mailto:aemrancr@gmail.com">aemrancr@gmail.com</a></p>
+                </div>
+              </div>
+              <div class="contact-point">
+                <span class="contact-point__icon"><i class="fa-solid fa-phone"></i></span>
+                <div>
+                  <strong>Phone</strong>
+                  <p><a class="inline-link" href="tel:+9647507937503">0750 7937503</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-list">
+              <a class="social-link" href="https://github.com/Imran-Mohammed-Shekho" target="_blank" rel="noreferrer"
+                aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a class="social-link" href="https://www.linkedin.com/in/imran-mohammed-undefined-33266b32a"
+                target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a class="social-link" href="https://www.facebook.com/share/196NEKQjP1/?mibextid=wwXIfr" target="_blank"
+                rel="noreferrer" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a class="social-link" href="https://www.instagram.com/a_mran_2_?igsh=NHR0enlnZjJuMTJo&utm_source=qr"
+                target="_blank" rel="noreferrer" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__inner">
+        <div>
+          <a class="brand" href="index.html">Imran<span>.</span></a>
+          <p class="lead">Crafting mobile experiences with Flutter and clear interface structure.</p>
+        </div>
+
+        <div class="site-footer__links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <p>&copy; <span data-current-year></span> Imran Mohammed</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

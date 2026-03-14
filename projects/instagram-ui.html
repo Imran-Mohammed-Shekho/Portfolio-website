@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram Profile UI | Project Details</title>
+    <meta
+      name="description"
+      content="Instagram profile page UI clone built with Flutter, focused on layout accuracy, responsiveness, and custom widgets."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Outfit:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="site-header__inner">
+          <a class="brand" href="../index.html">Imran<span>.</span></a>
+          <nav class="site-nav" aria-label="Project navigation">
+            <div class="site-nav__links">
+              <a href="../index.html">Home</a>
+              <a href="#overview">Overview</a>
+              <a href="#features">Features</a>
+              <a href="#gallery">Gallery</a>
+            </div>
+            <a class="button button--secondary" href="https://github.com/Imran-Mohammed-Shekho/Instagram-UI" target="_blank" rel="noreferrer">
+              <i class="fa-brands fa-github"></i>
+              Repository
+            </a>
+            <div class="header-actions">
+              <button class="mobile-toggle" type="button" data-mobile-toggle aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+            </div>
+          </nav>
+        </div>
+        <div class="mobile-nav" id="mobile-menu" data-mobile-menu>
+          <a href="../index.html">Home</a>
+          <a href="#overview">Overview</a>
+          <a href="#features">Features</a>
+          <a href="#gallery">Gallery</a>
+          <a href="https://github.com/Imran-Mohammed-Shekho/Instagram-UI" target="_blank" rel="noreferrer">Repository</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="project-hero">
+            <div class="project-hero__grid">
+              <div>
+                <span class="eyebrow">Flutter UI Clone</span>
+                <h1 class="project-hero__title">Instagram Profile UI</h1>
+                <p class="project-hero__copy">
+                  A Flutter-based recreation of the Instagram profile page, built to mirror familiar layout
+                  patterns while staying responsive across mobile screen sizes.
+                </p>
+                <div class="project-badges">
+                  <span class="pill">Flutter</span>
+                  <span class="pill">Custom Widgets</span>
+                  <span class="pill">Responsive Layout</span>
+                  <span class="pill">UI Clone</span>
+                </div>
+                <div class="button-row">
+                  <a class="button button--primary" href="https://github.com/Imran-Mohammed-Shekho/Instagram-UI" target="_blank" rel="noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                    View Source
+                  </a>
+                  <a class="button button--secondary" href="../index.html#projects">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Back to Projects
+                  </a>
+                </div>
+              </div>
+              <div class="project-visual">
+                <img src="../assets/images/projects/resized_iphone15_image-left.png" alt="Instagram profile UI preview" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tight" id="overview">
+        <div class="container">
+          <div class="project-layout">
+            <article class="card">
+              <h2 class="project-title">Overview</h2>
+              <p class="lead">
+                This project focuses on interface accuracy more than backend behavior. The goal was to recreate
+                the visual structure of an Instagram profile screen using Flutter widgets and strong spacing
+                control.
+              </p>
+              <p style="margin-top: 1rem">
+                It demonstrates comfort with stacked layouts, reusable components, and interface composition that
+                feels native on mobile devices.
+              </p>
+            </article>
+            <aside class="card">
+              <h3>Project details</h3>
+              <div class="detail-list" style="margin-top: 1rem">
+                <div>
+                  <strong>Category</strong>
+                  <span>UI clone / practice project</span>
+                </div>
+                <div>
+                  <strong>Built with</strong>
+                  <span>Flutter, Dart</span>
+                </div>
+                <div>
+                  <strong>Main focus</strong>
+                  <span>Layout precision, widget composition, responsive design</span>
+                </div>
+                <div>
+                  <strong>Repository</strong>
+                  <span><a class="inline-link" href="https://github.com/Imran-Mohammed-Shekho/Instagram-UI" target="_blank" rel="noreferrer">Open on GitHub</a></span>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="features">
+        <div class="container">
+          <div class="section__header">
+            <span class="eyebrow">Key Features</span>
+            <h2 class="section-title">A profile screen recreated with reusable Flutter widgets.</h2>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <span class="feature-card__icon"><i class="fa-solid fa-user"></i></span>
+              <h3>Profile header</h3>
+              <p>User image, name, bio, and profile metadata are laid out to closely match the original pattern.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-card__icon"><i class="fa-solid fa-chart-simple"></i></span>
+              <h3>User stats</h3>
+              <p>Post, followers, and following counts are styled with strong hierarchy and balance.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-card__icon"><i class="fa-solid fa-pen-to-square"></i></span>
+              <h3>Edit profile action</h3>
+              <p>The action row is structured to feel like a complete profile screen instead of a static mockup.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-card__icon"><i class="fa-solid fa-circle-dot"></i></span>
+              <h3>Story highlights</h3>
+              <p>Highlight bubbles demonstrate horizontal content and small reusable display components.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-card__icon"><i class="fa-solid fa-table-cells-large"></i></span>
+              <h3>Post grid</h3>
+              <p>A media grid completes the profile composition and reinforces consistent spacing decisions.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-card__icon"><i class="fa-solid fa-mobile-screen"></i></span>
+              <h3>Responsive layout</h3>
+              <p>The screen adapts to modern phone sizes, including the iPhone-style mockups in the gallery.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="gallery">
+        <div class="container">
+          <div class="section__header">
+            <span class="eyebrow">Gallery</span>
+            <h2 class="section-title">Preview screens from the interface clone.</h2>
+          </div>
+          <div class="gallery-grid">
+            <article class="gallery-card">
+              <figure>
+                <img src="../assets/images/projects/resized_iphone15_image-left.png" alt="Instagram UI landscape preview" />
+                <figcaption>Wide preview showing overall composition and spacing.</figcaption>
+              </figure>
+            </article>
+            <article class="gallery-card">
+              <figure>
+                <img src="../assets/images/projects/resized_iphone15_image-portrait.png" alt="Instagram UI portrait preview" />
+                <figcaption>Portrait display focusing on the main profile content stack.</figcaption>
+              </figure>
+            </article>
+            <article class="gallery-card">
+              <figure>
+                <img src="../assets/images/projects/resized_iphone15_image-landscape.png" alt="Instagram UI alternate device preview" />
+                <figcaption>Responsive version adapted to another screen orientation.</figcaption>
+              </figure>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer__inner">
+          <div>
+            <a class="brand" href="../index.html">Imran<span>.</span></a>
+            <p class="lead">Project detail page in the new standard portfolio structure.</p>
+          </div>
+          <div class="site-footer__links">
+            <a href="../index.html#projects">All Projects</a>
+            <a href="../index.html#contact">Contact</a>
+          </div>
+          <p>&copy; <span data-current-year></span> Imran Mohammed</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

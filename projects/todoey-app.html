@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todoey App | Project Details</title>
+    <meta
+      name="description"
+      content="Todoey is a lightweight Flutter note-taking app focused on responsive layout, note management, and clean interaction design."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Outfit:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="site-header__inner">
+          <a class="brand" href="../index.html">Imran<span>.</span></a>
+          <nav class="site-nav" aria-label="Project navigation">
+            <div class="site-nav__links">
+              <a href="../index.html">Home</a>
+              <a href="#overview">Overview</a>
+              <a href="#features">Features</a>
+              <a href="#gallery">Gallery</a>
+            </div>
+            <a class="button button--secondary" href="https://github.com/Imran-Mohammed-Shekho/Todyoe-App" target="_blank" rel="noreferrer">
+              <i class="fa-brands fa-github"></i>
+              Repository
+            </a>
+            <div class="header-actions">
+              <button class="mobile-toggle" type="button" data-mobile-toggle aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+            </div>
+          </nav>
+        </div>
+        <div class="mobile-nav" id="mobile-menu" data-mobile-menu>
+          <a href="../index.html">Home</a>
+          <a href="#overview">Overview</a>
+          <a href="#features">Features</a>
+          <a href="#gallery">Gallery</a>
+          <a href="https://github.com/Imran-Mohammed-Shekho/Todyoe-App" target="_blank" rel="noreferrer">Repository</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="project-hero">
+            <div class="project-hero__grid">
+              <div>
+                <span class="eyebrow">Productivity Flutter App</span>
+                <h1 class="project-hero__title">Todoey App</h1>
+                <p class="project-hero__copy">
+                  A lightweight note-taking experience focused on fast input, clean organization, and responsive
+                  interaction. The project demonstrates simple product thinking executed with a polished UI.
+                </p>
+                <div class="project-badges">
+                  <span class="pill">Flutter</span>
+                  <span class="pill">Productivity</span>
+                  <span class="pill">Dark Mode</span>
+                  <span class="pill">Responsive UI</span>
+                </div>
+                <div class="button-row">
+                  <a class="button button--primary" href="https://github.com/Imran-Mohammed-Shekho/Todyoe-App" target="_blank" rel="noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                    View Source
+                  </a>
+                  <a class="button button--secondary" href="../index.html#projects">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Back to Projects
+                  </a>
+                </div>
+              </div>
+              <div class="project-visual">
+                <img src="../assets/images/projects/imageai.png" alt="Todoey app preview" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tight" id="overview">
+        <div class="container">
+          <div class="project-layout">
+            <article class="card">
+              <h2 class="project-title">Overview</h2>
+              <p class="lead">
+                Todoey was built as a small productivity app and UI exercise. The priority was to make adding,
+                viewing, and removing notes feel immediate without overloading the screen with extra actions.
+              </p>
+              <p style="margin-top: 1rem">
+                It is one of the clearest examples in the portfolio of using a simple product idea to practice
+                responsive layout, state updates, and polished interaction flow.
+              </p>
+            </article>
+            <aside class="card">
+              <h3>Project details</h3>
+              <div class="detail-list" style="margin-top: 1rem">
+                <div>
+                  <strong>Category</strong>
+                  <span>Notes and productivity</span>
+                </div>
+                <div>
+                  <strong>Built with</strong>
+                  <span>Flutter, Dart</span>
+                </div>
+                <div>
+                  <strong>Main focus</strong>
+                  <span>Fast note actions, responsive design, clean state updates</span>
+                </div>
+                <div>
+                  <strong>Repository</strong>
+                  <span><a class="inline-link" href="https://github.com/Imran-Mohammed-Shekho/Todyoe-App" target="_blank" rel="noreferrer">Open on GitHub</a></span>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="features">
+        <div class="container">
+          <div class="section__header">
+            <span class="eyebrow">Key Features</span>
+            <h2 class="section-title">A minimal app built for speed and clarity.</h2>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <span class="feature-card__icon"><i class="fa-solid fa-plus"></i></span>
+              <h3>Instant note creation</h3>
+              <p>Users can add notes quickly without navigating through extra screens or forms.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-card__icon"><i class="fa-solid fa-trash"></i></span>
+              <h3>Easy deletion</h3>
+              <p>Removing items stays simple so the interface always feels lightweight and useful.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-card__icon"><i class="fa-solid fa-arrows-rotate"></i></span>
+              <h3>Real-time UI refresh</h3>
+              <p>Changes are reflected immediately, reinforcing a fast and responsive app feel.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-card__icon"><i class="fa-solid fa-mobile-screen"></i></span>
+              <h3>Responsive layout</h3>
+              <p>The layout remains readable across phone and larger device sizes.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-card__icon"><i class="fa-solid fa-moon"></i></span>
+              <h3>Dark mode</h3>
+              <p>A dark theme helps the product feel polished even as a small utility application.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-card__icon"><i class="fa-solid fa-bolt"></i></span>
+              <h3>Lightweight experience</h3>
+              <p>The interface stays fast because the product scope is intentionally focused and simple.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="gallery">
+        <div class="container">
+          <div class="section__header">
+            <span class="eyebrow">Gallery</span>
+            <h2 class="section-title">Screens showing the note flow and visual system.</h2>
+          </div>
+          <div class="gallery-grid">
+            <article class="gallery-card">
+              <figure>
+                <img src="../assets/images/projects/tody1_LE_upscale_balanced_x4.jpg" alt="Todoey app screen one" />
+                <figcaption>Primary note screen built with clear hierarchy and roomy spacing.</figcaption>
+              </figure>
+            </article>
+            <article class="gallery-card">
+              <figure>
+                <img src="../assets/images/projects/tody3_LE_upscale_balanced_x4.jpg" alt="Todoey app screen two" />
+                <figcaption>Another view of the layout with emphasis on clean card presentation.</figcaption>
+              </figure>
+            </article>
+            <article class="gallery-card">
+              <figure>
+                <img src="../assets/images/projects/tody_LE_upscale_balanced_x4.jpg" alt="Todoey app dark mode preview" />
+                <figcaption>Dark-mode styling used to keep the app comfortable in low-light use.</figcaption>
+              </figure>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer__inner">
+          <div>
+            <a class="brand" href="../index.html">Imran<span>.</span></a>
+            <p class="lead">Project detail page in the new standard portfolio structure.</p>
+          </div>
+          <div class="site-footer__links">
+            <a href="../index.html#projects">All Projects</a>
+            <a href="../index.html#contact">Contact</a>
+          </div>
+          <p>&copy; <span data-current-year></span> Imran Mohammed</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

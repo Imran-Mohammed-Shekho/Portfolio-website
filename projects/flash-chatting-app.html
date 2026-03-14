@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flash Chatting App | Project Details</title>
+    <meta
+      name="description"
+      content="Flash Chatting App is a Flutter real-time messaging project using Firebase authentication, Firestore, and stream-based updates."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Outfit:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="site-header__inner">
+          <a class="brand" href="../index.html">Imran<span>.</span></a>
+          <nav class="site-nav" aria-label="Project navigation">
+            <div class="site-nav__links">
+              <a href="../index.html">Home</a>
+              <a href="#overview">Overview</a>
+              <a href="#features">Features</a>
+              <a href="#gallery">Gallery</a>
+            </div>
+            <a class="button button--secondary" href="https://github.com/Imran-Mohammed-Shekho/Chating-App" target="_blank" rel="noreferrer">
+              <i class="fa-brands fa-github"></i>
+              Repository
+            </a>
+            <div class="header-actions">
+              <button class="mobile-toggle" type="button" data-mobile-toggle aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+            </div>
+          </nav>
+        </div>
+        <div class="mobile-nav" id="mobile-menu" data-mobile-menu>
+          <a href="../index.html">Home</a>
+          <a href="#overview">Overview</a>
+          <a href="#features">Features</a>
+          <a href="#gallery">Gallery</a>
+          <a href="https://github.com/Imran-Mohammed-Shekho/Chating-App" target="_blank" rel="noreferrer">Repository</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="project-hero">
+            <div class="project-hero__grid">
+              <div>
+                <span class="eyebrow">Realtime Messaging App</span>
+                <h1 class="project-hero__title">Flash Chatting App</h1>
+                <p class="project-hero__copy">
+                  A Flutter chat application that uses Firebase services for authentication and real-time message
+                  delivery. The project is built around responsive chat screens and stream-based updates.
+                </p>
+                <div class="project-badges">
+                  <span class="pill">Flutter</span>
+                  <span class="pill">Firebase</span>
+                  <span class="pill">Firestore</span>
+                  <span class="pill">Streams</span>
+                </div>
+                <div class="button-row">
+                  <a class="button button--primary" href="https://github.com/Imran-Mohammed-Shekho/Chating-App" target="_blank" rel="noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                    View Source
+                  </a>
+                  <a class="button button--secondary" href="../index.html#projects">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Back to Projects
+                  </a>
+                </div>
+              </div>
+              <div class="project-visual">
+                <img src="../assets/images/projects/flash-chating.jpg" alt="Flash Chatting app preview" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tight" id="overview">
+        <div class="container">
+          <div class="project-layout">
+            <article class="card">
+              <h2 class="project-title">Overview</h2>
+              <p class="lead">
+                Flash Chatting App is built to deliver real-time conversations through a clean and modern mobile
+                interface. Messages appear instantly and the overall app structure supports a fluid chat
+                experience.
+              </p>
+              <p style="margin-top: 1rem">
+                It is one of the more dynamic projects in the portfolio because it combines authentication,
+                backend data streams, and interface responsiveness inside a focused product concept.
+              </p>
+            </article>
+            <aside class="card">
+              <h3>Project details</h3>
+              <div class="detail-list" style="margin-top: 1rem">
+                <div>
+                  <strong>Category</strong>
+                  <span>Realtime messaging app</span>
+                </div>
+                <div>
+                  <strong>Built with</strong>
+                  <span>Flutter, Firebase, Firestore</span>
+                </div>
+                <div>
+                  <strong>Main focus</strong>
+                  <span>Realtime chat, authentication, stream updates</span>
+                </div>
+                <div>
+                  <strong>Repository</strong>
+                  <span><a class="inline-link" href="https://github.com/Imran-Mohammed-Shekho/Chating-App" target="_blank" rel="noreferrer">Open on GitHub</a></span>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="features">
+        <div class="container">
+          <div class="section__header">
+            <span class="eyebrow">Key Features</span>
+            <h2 class="section-title">Realtime chat built on Firebase and reactive UI updates.</h2>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <span class="feature-card__icon"><i class="fa-solid fa-bolt"></i></span>
+              <h3>Realtime messaging</h3>
+              <p>Messages are pushed instantly to the interface through Firestore-backed updates.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-card__icon"><i class="fa-solid fa-user-shield"></i></span>
+              <h3>Authentication</h3>
+              <p>Firebase Authentication provides user registration and login flow for the app.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-card__icon"><i class="fa-solid fa-wave-square"></i></span>
+              <h3>Stream-based state</h3>
+              <p>The app uses streams to keep message data reactive and synchronized with the UI.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-card__icon"><i class="fa-solid fa-comments"></i></span>
+              <h3>Chat-first interface</h3>
+              <p>The layout is organized around conversation flow, message readability, and fast input.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-card__icon"><i class="fa-solid fa-mobile-screen"></i></span>
+              <h3>Responsive screens</h3>
+              <p>The design stays usable on mobile form factors without sacrificing chat density.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-card__icon"><i class="fa-solid fa-moon"></i></span>
+              <h3>Dark mode support</h3>
+              <p>The interface includes a darker presentation for comfortable use during longer sessions.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="gallery">
+        <div class="container">
+          <div class="section__header">
+            <span class="eyebrow">Gallery</span>
+            <h2 class="section-title">Screens from the realtime messaging experience.</h2>
+          </div>
+          <div class="gallery-grid">
+            <article class="gallery-card">
+              <figure>
+                <img src="../assets/images/projects/flash-chating.jpg" alt="Flash Chatting app main screen" />
+                <figcaption>Primary chat screen emphasizing message flow and conversation clarity.</figcaption>
+              </figure>
+            </article>
+            <article class="gallery-card">
+              <figure>
+                <img src="../assets/images/projects/flash-chating1.jpg" alt="Flash Chatting app secondary screen" />
+                <figcaption>Additional screen from the app showing the same clean messaging system.</figcaption>
+              </figure>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer__inner">
+          <div>
+            <a class="brand" href="../index.html">Imran<span>.</span></a>
+            <p class="lead">Project detail page in the new standard portfolio structure.</p>
+          </div>
+          <div class="site-footer__links">
+            <a href="../index.html#projects">All Projects</a>
+            <a href="../index.html#contact">Contact</a>
+          </div>
+          <p>&copy; <span data-current-year></span> Imran Mohammed</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
