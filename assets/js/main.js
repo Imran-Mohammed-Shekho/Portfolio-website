@@ -1,30 +1,6 @@
 (() => {
   const root = document.documentElement;
-  const themeStorageKey = "portfolio-theme";
-
-  const applyTheme = (theme) => {
-    root.dataset.theme = theme;
-
-    document.querySelectorAll("[data-theme-icon]").forEach((icon) => {
-      icon.className = theme === "dark" ? "fa-solid fa-sun" : "fa-solid fa-moon";
-    });
-
-    document.querySelectorAll("[data-theme-label]").forEach((label) => {
-      label.textContent = theme === "dark" ? "Light mode" : "Dark mode";
-    });
-  };
-
-  const storedTheme = localStorage.getItem(themeStorageKey);
-  const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  applyTheme(storedTheme || (systemPrefersDark ? "dark" : "light"));
-
-  document.querySelectorAll("[data-theme-toggle]").forEach((button) => {
-    button.addEventListener("click", () => {
-      const nextTheme = root.dataset.theme === "dark" ? "light" : "dark";
-      localStorage.setItem(themeStorageKey, nextTheme);
-      applyTheme(nextTheme);
-    });
-  });
+  root.dataset.theme = "dark";
 
   const mobileToggle = document.querySelector("[data-mobile-toggle]");
   const mobileMenu = document.querySelector("[data-mobile-menu]");
