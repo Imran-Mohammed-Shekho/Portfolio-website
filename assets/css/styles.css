@@ -693,8 +693,9 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
+  padding: 0;
   border-radius: 24px;
+  overflow: hidden;
   background:
     radial-gradient(circle at top right, rgba(15, 140, 255, 0.12), transparent 34%),
     var(--surface-muted);
@@ -704,12 +705,12 @@ button {
 .project-visual img,
 .gallery-card img {
   width: 100%;
-  border-radius: 22px;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
 }
 
 .project-visual img {
-  max-height: 460px;
+  min-height: 460px;
 }
 
 .project-layout {
@@ -748,16 +749,16 @@ button {
 .gallery-card figure {
   display: grid;
   gap: 0;
-  align-items: center;
-  justify-items: center;
-  padding: 1rem 1rem 0;
+  align-items: stretch;
+  justify-items: stretch;
+  padding: 0;
   background:
     radial-gradient(circle at top right, rgba(15, 140, 255, 0.08), transparent 28%),
     var(--surface-muted);
 }
 
 .gallery-card img {
-  max-height: 430px;
+  min-height: 430px;
 }
 
 .gallery-card figcaption {
